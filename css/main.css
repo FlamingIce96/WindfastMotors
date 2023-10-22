@@ -1,0 +1,111 @@
+/* styles.css */
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*NAVBAR*/
+nav {
+    background-color: #444;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+    -webkit-border-radius: 5px;
+}
+
+/*BODY*/
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+/*TABLE*/
+table, td, th {
+  border: 1px solid black;
+}
+table{
+  border-collapse: collapse;
+  align-self: center;
+}
+/*legenda*/
+th {
+  height: 40px;
+  background-color: #333;
+  color: white;
+}
+/*radky*/
+td {
+  padding-left: 10px;
+  vertical-align: center;
+  height: 28px;
+  background-color: #f0f0f0;
+}
+.table_cena {
+  text-align: right;
+  padding-right: 10px;
+}
+
+/*MODEL*/
+h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.model_div {
+  text-align: center;
+  border: 1px solid #b9b9b9;
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+
+
+}
+.car_model_table {
+  justify-content: center;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+/*LOGIC*/
+.hidden_selection {
+  /*display: none;*/
+}
