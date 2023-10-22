@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WindfastMotors</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body id="home_top">
+<!--    <script src="js/main.js"></script>-->
+    <header>
+        <img class="header_logo_white_png" src="img_src/white_transparent.png" alt="WindfastMotors_white_logo_transparent" height="200" style="background-color: transparent;">
+        <h1>Windfast Motors</h1>
+    </header>
+
+    <!-- sekce navigace -->
+    <nav>
+        <a href="#home_top" id="nav_button_home" onclick="toggleVisibilityHome()">Domů</a>      <!-- id home -->
+        <a href="#home_top" id="nav_button_catalog" onclick="toggleVisibilityCatalog()">Katalog</a>   <!-- id catalog -->
+        <a href="#home_top" id="nav_button_campaign" onclick="toggleVisibilityCampaign()">Kampaň</a>    <!-- id campaign -->
+        <a href="#home_top" id="nav_button_price_list" onclick="toggleVisibilityPriceList()">Ceník</a>     <!-- id price_list -->
+        <a href="#home_top" id="nav_button_contact" onclick="toggleVisibilityContact()">Kontakt</a>   <!-- id contact -->
+    </nav>
+    <div class="container">
+      <!--
+      selection se zobrazuje
+      hidden_selection se skryje
+      -->
+
+      <!-- start home section -->
+      <div class="selection" id="home">
+        <h2>Vítejte u Windfast Motors</h2>
+                <p>This is a modern car page. You can use this space to provide information about the car, its features, specifications, and showcase images of the car.</p>
+
+                <h3>Co vám nabízí naše vozy</h3>
+                <ul>
+                    <li>transport</li>
+                    <li>bezpečí</li>
+                    <li>zážitky</li>
+                    <!-- Add more features here -->
+                </ul>
+      </div> <!-- end home section -->
+
+      <!-- start katalog section -->
+      <div class="hidden_selection" id="catalog">
+        <h2>Katalog</h2>
+        <!-- tabulka modelů -->
+
+        <!-- modely -->
+        <div class="model_div" id="model_wf01">
+          <h3> WF01 - blabla </h3> <!-- #UPRAV nazev a id pro konkretni model-->
+          <!-- #UPRAV lokaci a nazev obrazku pro konkretni model-->
+          <img src="img_src/car/placeholder_tile-wide.png" title="_placeholder_" alt="place_holder_for_img">
+          <p> <!-- #UPRAV popis pro konkretni model-->
+            blabla nejaky popis auta
+          </p>
+          <div class="car_model_table">
+            <table>
+              <tr class="table_legend_car">
+                <th title="měsíc/rok vydání" style="width: 95px">datum</th>
+                <th style="width: 315px">dostupné barvy</th>
+                <th style="width: 135px">cena v Kč</th>
+              </tr>
+              <tr> <!-- #UPRAV hodnoty pro konkretni model-->
+                <td>04/2010</td>
+                <td>černá, modrá zelená</td>
+                <td class="table_cena">230 000</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!--
+
+        <div class="model_div" id="_">
+          <h3>_</h3>
+          <img src="img_src/car/placeholder_tile-wide.png" title="_placeholder_" alt="place_holder_for_img">
+          <p>
+            __________________________________
+          </p>
+          <div class="car_model_table">
+            <table>
+              <tr class="table_legend_car">
+                <th title="měsíc/rok vydání" style="width: 95px">datum</th>
+                <th style="width: 315px">dostupné barvy</th>
+                <th style="width: 135px">ena v Kč</th>
+              </tr>
+              <tr>
+                <td>_</td>
+                <td>_</td>
+                <td class="table_cena">_</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        -->
+
+        <div class="model_div" id="_sth">
+          <h3>_</h3>
+          <img src="img_src/car/placeholder_tile-wide.png" title="_placeholder_" alt="place_holder_for_img">
+          <p>
+            __________________________________
+          </p>
+          <div class="car_model_table">
+            <table>
+              <tr class="table_legend_car">
+                <th title="měsíc/rok vydání" style="width: 95px">datum</th>
+                <th style="width: 315px">dostupné barvy</th>
+                <th style="width: 135px">ena v Kč</th>
+              </tr>
+              <tr>
+                <td>_</td>
+                <td>_</td>
+                <td class="table_cena">_</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="model_div" id="_idk">
+          <h3>_</h3>
+          <img src="img_src/car/placeholder_tile-wide.png" title="_placeholder_" alt="place_holder_for_img">
+          <p>
+            __________________________________
+          </p>
+          <div class="car_model_table">
+            <table>
+              <tr class="table_legend_car">
+                <th title="měsíc/rok vydání" style="width: 95px">datum</th>
+                <th style="width: 315px">dostupné barvy</th>
+                <th style="width: 135px">ena v Kč</th>
+              </tr>
+              <tr>
+                <td>_</td>
+                <td>_</td>
+                <td class="table_cena">_</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="model_div" id="_idc">
+          <h3>_</h3>
+          <img src="img_src/car/placeholder_tile-wide.png" title="_placeholder_" alt="place_holder_for_img">
+          <p>
+            __________________________________
+          </p>
+          <div class="car_model_table">
+            <table>
+              <tr class="table_legend_car">
+                <th title="měsíc/rok vydání" style="width: 95px">datum</th>
+                <th style="width: 315px">dostupné barvy</th>
+                <th style="width: 135px">ena v Kč</th>
+              </tr>
+              <tr>
+                <td>_</td>
+                <td>_</td>
+                <td class="table_cena">_</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div> <!-- end katalog section -->
+
+      <!-- start campaign section -->
+      <div class="hidden_selection" id="campaign">
+
+      </div> <!-- end campaign section -->
+
+      <!-- start cenik section -->
+      <div class="hidden_selection" id="price_list">
+        <h2>Ceník</h2>
+        <h3>Ceník aut</h3>
+        <table>
+          <tr class="table_legend_car">
+              <th style="width: 410px">název modelu</th>
+              <th style="width: 135px">cena v Kč</th>
+          </tr>
+          <tr>
+            <td><a href="#model_wf01" onclick="toggleVisibilityCatalog()">WF01 - blabla</a></td>
+            <td class="table_cena">230 000</td>
+          </tr>
+        </table>
+        <h3>Ceník doplňkových služeb</h3>
+        <table>
+          <tr class="table_legend_car">
+              <th style="width: 410px">služba</th>
+              <th style="width: 135px">cena v Kč</th>
+          </tr>
+          <tr>
+            <td>umytí okna</td>
+            <td class="table_cena">20</td>
+          </tr>
+        </table>
+      </div> <!-- end cenik section -->
+
+      <div class="selection" id="contact">
+
+      </div> <!-- end contact section -->
+
+    </div> <!-- end container section // strana pod navbarem -->
+</body>
+</html>
